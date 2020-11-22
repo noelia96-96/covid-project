@@ -1,0 +1,11 @@
+<div class="card">
+  <div class="card-header" *ngIf="globalMostrar.Country !=null">{{globalMostrar.Country}}</div>
+  <div class="card-header" *ngIf="globalMostrar.Country==null"> Global</div>
+  <div class="card-body">
+    <h5 class="card-title">Información</h5>
+    <p class="card-text">Confirmados: {{globalMostrar.NewConfirmed}} / {{globalMostrar.TotalConfirmed}}</p>
+    <p class="card-text">Muertos: {{globalMostrar.NewDeaths}} / {{globalMostrar.TotalDeaths}}</p>
+    <p class="card-text">Recuperados: {{globalMostrar.NewRecovered}} / {{globalMostrar.TotalRecovered}}</p>
+  </div>
+</div>
+
